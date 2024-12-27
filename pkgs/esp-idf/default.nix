@@ -73,6 +73,7 @@ let
           esp-idf-monitor
           esp-idf-size
           esp-idf-panic-decoder
+          pyclang
 
           freertos_gdb
 
