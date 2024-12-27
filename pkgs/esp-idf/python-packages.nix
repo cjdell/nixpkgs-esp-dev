@@ -210,5 +210,21 @@ rec {
       homepage = "https://github.com/espressif/esp-idf-panic-decoder";
     };
   };
+
+  pyclang = buildPythonPackage rec {
+    pname = "pyclang";
+    version = "0.5.0";
+
+    src = fetchPypi {
+      inherit pname version;
+      sha256 = "sha256-stcQaXHkSsXgcz19TUWF27e8O/eWlrvaTKKFk0JeHVQ=";
+    };
+
+    doCheck = false;
+
+    meta = {
+      homepage = "https://pypi.org/project/pyclang/";
+    };
+  };
 }
 
